@@ -1,0 +1,52 @@
+.vue-notification {
+    @apply rounded;
+    background: theme('colors.secondary.light') !important;
+    border-left: 5px solid theme('colors.secondary.dark') !important;
+
+    & .notification-title {
+        @apply text-secondary-dark
+    }
+
+    & .notification-content {
+        @apply text-light
+    }
+
+    &.success {
+        background: theme('colors.primary.light') !important;
+        border-left-color: theme('colors.primary.dark') !important;
+
+        & .notification-title {
+            @apply text-primary-dark
+        }
+
+        & .icon {
+            @apply fill-primary-dark
+        }
+    }
+
+    &.warning {
+        background: theme('colors.orange.light') !important;
+        border-left-color: theme('colors.orange.dark') !important;
+
+        & .notification-title {
+            @apply text-orange-dark
+        }
+
+        & .icon {
+            @apply fill-orange-dark
+        }
+    }
+
+    &.error {
+        background: theme('colors.red.light') !important;
+        border-left-color: theme('colors.red.dark') !important;
+
+        & .notification-title {
+            @apply text-red-dark
+        }
+
+        & .icon {
+            @apply fill-red-dark
+        }
+    }
+}

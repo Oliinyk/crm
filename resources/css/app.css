@@ -1,0 +1,26 @@
+/* Reset */
+@import "tailwindcss/base";
+@import "reset";
+
+/* Components */
+@import "tailwindcss/components";
+@import "buttons";
+@import "form";
+@import "notifications";
+@import "modals";
+
+/* Utilities */
+@import "tailwindcss/utilities";
+
+/* Datepicker */
+@import "vue2-datepicker/index.css";
+
+html {
+    font-size: 14px;
+    line-height: 143%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(50%);
+}

@@ -1,0 +1,147 @@
+.btn-cta-primary {
+    @apply text-light
+    bg-primary
+    hover:bg-primary-light
+    hover:shadow-md
+    focus:bg-primary-light
+    active:bg-primary-dark
+    disabled:text-gray
+    disabled:bg-primary-light
+    py-1.5
+    sm:py-2
+    px-3
+    sm:px-5
+    leading-6
+    rounded;
+}
+
+.btn-cta-secondary {
+    @apply text-light
+    bg-secondary-dark
+    hover:bg-secondary-light
+    hover:shadow-md
+    focus:ring-dark
+    focus:ring-1
+    active:bg-secondary
+    disabled:text-gray-light
+    disabled:bg-secondary-light
+    py-1.5
+    sm:py-2
+    px-3
+    sm:px-5
+    leading-6
+    rounded;
+}
+
+.btn-icon {
+    @apply hover:bg-accent-light
+    focus:shadow-none
+    focus:bg-accent-light
+    active:bg-accent
+    disabled:bg-accent
+    p-2
+    leading-6
+    rounded;
+}
+
+.btn-accent {
+    @apply text-dark
+    bg-accent
+    hover:bg-accent-light
+    hover:shadow-md
+    focus:shadow-none
+    focus:bg-accent-light
+    active:bg-accent-dark
+    disabled:text-gray-light
+    disabled:bg-accent-light
+    py-1.5
+    sm:py-2
+    px-3
+    sm:px-5
+    leading-6
+    rounded;
+}
+
+.btn-outline {
+    @apply text-dark
+    bg-white
+    shadow-border-light
+    hover:bg-accent-light
+    hover:shadow-md
+    focus:shadow-none
+    focus:bg-accent-light
+    active:bg-accent
+    disabled:text-gray-light
+    py-1.5
+    sm:py-2
+    px-3
+    sm:px-5
+    leading-6
+    rounded;
+}
+
+.btn-outline-danger {
+    @apply text-dark
+    bg-white
+    shadow-border-red
+    hover:bg-red-light
+    hover:text-light
+    hover:shadow-md
+    focus:shadow-none
+    focus:bg-red-light
+    active:bg-red
+    active:text-light
+    py-1.5
+    sm:py-2
+    px-3
+    sm:px-5
+    leading-6
+    rounded;
+}
+
+.btn-spinner,
+.btn-spinner:after {
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.btn-spinner {
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 0.2em solid white;
+    border-right: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-left: 0.2em solid transparent;
+    transform: translateZ(0);
+    animation: spinning 1s infinite linear;
+}
+
+.btn-spinner-gray,
+.btn-spinner-gray:after {
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.btn-spinner-gray {
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 0.2em solid #D2D3DA;
+    border-right: 0.2em solid #D2D3DA;
+    border-bottom: 0.2em solid #D2D3DA;
+    border-left: 0.2em solid transparent;
+    transform: translateZ(0);
+    animation: spinning 1s infinite linear;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

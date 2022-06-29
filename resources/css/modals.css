@@ -1,0 +1,18 @@
+.modal-override {
+    @apply
+
+    w-full
+    sm:w-auto
+}
+
+.modal-override1 {
+    @apply
+    rounded-none
+    sm:rounded-lg
+    sm:h-auto
+    !important
+}
+
+.modal-menu {
+    @apply bg-dark rounded-t-none !important;
+}
